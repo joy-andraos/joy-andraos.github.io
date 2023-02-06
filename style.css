@@ -1,0 +1,670 @@
+body {
+    background: rgb(189, 225, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: aliceblue;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .leftmargin {
+    position: relative;
+    background: rgb(21, 37, 62);
+    padding: 40px;
+}
+.name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.name .profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.name .profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.name h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.name h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contact {
+    padding-top: 40px;
+}
+.contactinfo {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul {
+    position: relative;
+}
+.contact ul li {
+    position: relative;
+    left: -50px;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 176, 215);
+}
+.contact ul li span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.findme {
+    padding-top: 40px;
+}
+.findmeon {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.findme ul {
+    position: relative;
+}
+.findme ul li {
+    position: relative;
+    left: -50px;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.findme ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 176, 215);
+}
+.findme ul li span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.findme a:link {
+    color: rgb(255, 255, 255);
+}
+.findme a:visited{
+    color: rgb(0, 176, 215);
+} 
+.findme a:hover {
+    color: rgb(6, 143, 155);
+}    
+.lang {
+    padding-top: 40px;
+}
+.languages {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.lang ul {
+    position: relative;
+}
+.lang ul li {
+    position: relative;
+    left: -50px;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.lang ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 176, 215);
+}
+.lang ul li span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.skills {
+    padding-top: 40px;
+}
+.moreskills {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.skills ul {
+    position: relative;
+}
+.skills ul li {
+    position: relative;
+    left: -50px;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.skills ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(0, 176, 215);
+}
+.skills ul li span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.container .rightside {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    display: flex;
+}
+.cvinfo {
+    margin-bottom: 50px;
+}
+.cvinfo:last-child {
+    margin-bottom: 0;
+}
+.rightside .cvinfo h2 {
+    color: rgb(21, 37, 62);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.lauicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #006e58;
+    position: relative;
+    display: inline-block;
+}
+.lauimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.lautext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #006e5877;
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.lautext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.lauicon:hover .lautext {
+    right: 0;
+}
+.ndnicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(55, 29, 130);
+    position: relative;
+    display: inline-block;
+}
+.ndnimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.ndntext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.544);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.ndntext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.ndnicon:hover .ndntext {
+    right: 0;
+}
+.llbicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(194, 238, 75);
+    position: relative;
+    display: inline-block;
+}
+.llbimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.llbtext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(13, 17, 6, 0.544);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.llbtext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.llbicon:hover .llbtext {
+    right: 0;
+}
+.missioicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(20, 41, 92);
+    position: relative;
+    display: inline-block;
+}
+.missioimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.missiotext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.464);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.missiotext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.missioicon:hover .missiotext {
+    right: 0;
+}
+.tutoricon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(52, 184, 162);
+    position: relative;
+    display: inline-block;
+}
+.tutorimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.tutortext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(1, 119, 103, 0.388);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.tutortext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.tutoricon:hover .tutortext {
+    right: 0;
+}
+.socialicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(20, 41, 92);
+    position: relative;
+    display: inline-block;
+}
+.socialimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.socialtext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.504);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.socialtext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.socialicon:hover .socialtext {
+    right: 0;
+}
+.musicicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(0, 0, 0);
+    position: relative;
+    display: inline-block;
+}
+.musicimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.musictext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.musictext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.musicicon:hover .musictext {
+    right: 0;
+}
+.danceicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgba(197, 67, 154, 0.867);
+    position: relative;
+    display: inline-block;
+}
+.danceimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.dancetext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.504);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.dancetext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.danceicon:hover .dancetext {
+    right: 0;
+}
+.camicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(43, 40, 52);
+    position: relative;
+    display: inline-block;
+}
+.camimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.camtext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.544);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.camtext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.camicon:hover .camtext {
+    right: 0;
+}
+.painticon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgba(197, 67, 154, 0.867);
+    position: relative;
+    display: inline-block;
+}
+.paintimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.painttext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.504);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.painttext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.painticon:hover .painttext {
+    right: 0;
+}
+.clappericon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgb(43, 40, 52);
+    position: relative;
+    display: inline-block;
+}
+.clapperimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.clappertext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.544);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.clappertext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.clappericon:hover .clappertext {
+    right: 0;
+}
+.penicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid rgba(197, 67, 154, 0.867);
+    position: relative;
+    display: inline-block;
+}
+.penimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.pentext {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: rgba(21, 37, 62, 0.504);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.pentext h1 {
+    font-size: 15px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+.penicon:hover .pentext {
+    right: 0;
+}
